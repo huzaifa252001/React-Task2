@@ -1,0 +1,142 @@
+/* General styles for the entire application */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Header styles */
+.header {
+  background-color: #2c3e50;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+/* HomePage styles */
+.home-page {
+  background-image: url('/public/home.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.home-page h1 {
+  font-size: 3em;
+}
+
+/* Products page styles */
+.products-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Cart page styles */
+.cart-page {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Register page styles */
+.register-page, .login-page {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.register-page form, .login-page form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.register-page label, .login-page label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.register-page input, .login-page input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.register-page button, .login-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-page button:hover, .login-page button:hover {
+  background-color: #2980b9;
+}
